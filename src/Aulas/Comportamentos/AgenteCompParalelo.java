@@ -8,8 +8,8 @@ import jade.core.behaviours.SimpleBehaviour;
 public class AgenteCompParalelo extends Agent{
     
 protected void setup() {
-   System.out.println("Olï¿½! Eu sou o agente " + getLocalName());
-   System.out.println("Vou executar trï¿½s comportamentos concorrentemente");
+   System.out.println("Olá! Eu sou o agente " + getLocalName());
+   System.out.println("Vou executar três comportamentos concorrentemente");
         
 ParallelBehaviour s = new ParallelBehaviour(this,ParallelBehaviour.WHEN_ALL) {
    

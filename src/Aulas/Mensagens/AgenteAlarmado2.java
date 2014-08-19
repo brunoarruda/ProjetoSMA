@@ -27,7 +27,7 @@ public class AgenteAlarmado2 extends Agent{
                 String content = msg.getContent();
                 System.out.println("--> " + msg.getSender().getName() + ": " + content);
             }else 
-            //Com o block() bloqueamos o comportamento atï¿½ que uma nova 
+            //Com o block() bloqueamos o comportamento até que uma nova 
             //mensagem chegue ao agente e assim evitamos consumir ciclos
             //da CPU.
             block();

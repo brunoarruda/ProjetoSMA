@@ -1,9 +1,7 @@
 package Aulas.Mensagens;
 
 import jade.core.Agent;
-import jade.core.AID;
 import jade.lang.acl.ACLMessage;
-import jade.proto.AchieveREInitiator;
 import jade.domain.FIPANames;
 import jade.domain.FIPAAgentManagement.NotUnderstoodException;
 import jade.domain.FIPAAgentManagement.RefuseException;

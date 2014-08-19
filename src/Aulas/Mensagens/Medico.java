@@ -2,7 +2,6 @@ package Aulas.Mensagens;
 
 import jade.core.Agent;
 import jade.core.behaviours.*;
-import jade.core.AID;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.*;
 import jade.domain.FIPAException;
@@ -11,9 +10,9 @@ import jade.lang.acl.ACLMessage;
 public class Medico extends Agent {
 
     protected void setup() {
-        //Descriï¿½ï¿½o do Serviï¿½o
+        //Descrição do Serviço
         ServiceDescription servico = new ServiceDescription();
-        //Seu serviï¿½o ï¿½ salvar vidas
+        //Seu serviço é salvar vidas
         servico.setType("salva vidas");
         servico.setName(this.getLocalName());
         registraServico(servico);
@@ -21,7 +20,7 @@ public class Medico extends Agent {
 
     }
 
-    //mï¿½todo para registrar serviï¿½o
+    //método para registrar serviço
     protected void registraServico(ServiceDescription sd) {
         DFAgentDescription dfd = new DFAgentDescription();
         dfd.addServices(sd);
@@ -32,7 +31,7 @@ public class Medico extends Agent {
         }
 
     }
-    //Mï¿½todo para adicionar um comportamento para receber mensagens
+    //Método para adicionar um comportamento para receber mensagens
     protected void RecebeMensagens(final String mensagem, final String resp) {
         addBehaviour(new CyclicBehaviour(this) {
 

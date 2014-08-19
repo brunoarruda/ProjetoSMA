@@ -8,7 +8,7 @@ import jade.lang.acl.MessageTemplate;
 public class AgenteBombeiroFiltro extends Agent {
 
     protected void setup() {
-        addBehaviour(new CyclicBehaviour(this) { //Inï¿½cio do Comportamento
+        addBehaviour(new CyclicBehaviour(this) { //Início do Comportamento
 
             public void action() {
 
@@ -16,7 +16,7 @@ public class AgenteBombeiroFiltro extends Agent {
                 MessageTemplate MT1 = MessageTemplate.MatchPerformative(ACLMessage.INFORM);
                 //definimos o segundo filtro
                 MessageTemplate MT2 = MessageTemplate.MatchLanguage("Portugues");
-                //Realizamos um "E" lï¿½gico entre os dois filtros
+                //Realizamos um "E" lógico entre os dois filtros
                 MessageTemplate MT3 = MessageTemplate.and(MT1, MT2);
                 //Recebe a mensagem de acordo com o filtro
                 ACLMessage msg = myAgent.receive(MT3);

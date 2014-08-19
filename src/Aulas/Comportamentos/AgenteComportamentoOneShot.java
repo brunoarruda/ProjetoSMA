@@ -7,6 +7,6 @@ public class AgenteComportamentoOneShot extends Agent{
    }    
    protected void takeDown()
    {
-      System.out.println("ExecuÃ§Ã£o finalizada!");
+      System.out.println("Execução finalizada!");
    }
 }

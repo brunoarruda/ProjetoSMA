@@ -8,9 +8,9 @@ import jade.core.behaviours.WakerBehaviour;
 public class AgenteSequencial extends Agent{
     
     protected void setup() {
-        //mensagem de inicializaï¿½ï¿½o do agente
-        System.out.println("OlÃ¡! Meu nome Ã© " + getLocalName());
-        System.out.println("Vou executar trÃªs comportamentos:");
+        //mensagem de inicialização do agente
+        System.out.println("Olá! Meu nome é " + getLocalName());
+        System.out.println("Vou executar três comportamentos:");
         
         //criamos um objeto da classe SequentialBehaviour
  SequentialBehaviour comportamento = new SequentialBehaviour(this) {

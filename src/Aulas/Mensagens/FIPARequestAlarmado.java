@@ -13,7 +13,7 @@ public class FIPARequestAlarmado extends Agent {
 
         Object[] args = getArguments();
         if (args != null && args.length > 0) {
-            System.out.println("Solicitando ajuda a vï¿½rias centrais de bombeiros...");
+            System.out.println("Solicitando ajuda a várias centrais de bombeiros...");
             //montando a mensagem a ser enviada posteriormente
             ACLMessage msg = new ACLMessage(ACLMessage.REQUEST);
             for (int i = 0; i < args.length; i++) {
@@ -22,8 +22,8 @@ public class FIPARequestAlarmado extends Agent {
             msg.setProtocol(FIPANames.InteractionProtocol.FIPA_REQUEST);
             msg.setContent("Fogo a 5 kms");
             /* A classe Iniciador(abaixo) extende a classe AchieveREInitiator, ela
-            atua como o iniciador do protoloco. Seu mï¿½todo construtor envia 
-            automaticamente a mensagem que estï¿½ no objeto msg */
+            atua como o iniciador do protoloco. Seu método construtor envia 
+            automaticamente a mensagem que está no objeto msg */
             addBehaviour(new Iniciador(this, msg));
         } else {
             System.out.println("Especifique o nome de pelo menos uma central de bombeiros");
@@ -35,33 +35,33 @@ public class FIPARequestAlarmado extends Agent {
 
 //envia a mensagem request para os receptores que foram especificados no objeto msg
         public Iniciador(Agent a, ACLMessage msg) {
-            super(a, msg);  //parï¿½metros = agente que estï¿½ enviando, mensagem a ser enviada
+            super(a, msg);  //parâmetros = agente que está enviando, mensagem a ser enviada
         }
-//Os mï¿½todos a seguir tratam a resposta do participante
-        //Se o participante concordar, isto ï¿½, enviar uma mensagem AGREE
+//Os métodos a seguir tratam a resposta do participante
+        //Se o participante concordar, isto é, enviar uma mensagem AGREE
         protected void handleAgree(ACLMessage agree) {
             System.out.println("Central de bombeiros " + agree.getSender().getName() + " informa que saiu para apagar o fogo");
         }
 
         //Se o participante se negar, enviando uma mensagem REFUSE
         protected void handleRefuse(ACLMessage refuse) {
-            System.out.println("Central de bombeiros " + refuse.getSender().getName() + " responde que o fogo estï¿½ muito longe " +
-                    "e nï¿½o pode apagï¿½-lo");
+            System.out.println("Central de bombeiros " + refuse.getSender().getName() + " responde que o fogo está muito longe " +
+                    "e não pode apagá-lo");
         }
 
-        //Se o participante nï¿½o entendeu, enviando uma mensagem NOT-UNDERSTOOD
+        //Se o participante não entendeu, enviando uma mensagem NOT-UNDERSTOOD
         protected void handleNotUnderstood(ACLMessage notUnderstood) {
-            System.out.println("Central de bombeiros " + notUnderstood.getSender().getName() + "por algum motivo nï¿½o entendeu a solicitaï¿½ï¿½o");
+            System.out.println("Central de bombeiros " + notUnderstood.getSender().getName() + "por algum motivo não entendeu a solicitaï¿½ï¿½o");
 
         }
 
-        //Se houve uma falha na execuï¿½ï¿½o do pedido
+        //Se houve uma falha na execução do pedido
         protected void handleFailure(ACLMessage failure) {
-            //Verifica inicialmente se foi um erro nas pï¿½ginas brancas
+            //Verifica inicialmente se foi um erro nas páginas brancas
             if (failure.getSender().equals(getAMS())) {
-                System.out.println("Alguma das centrais de bombeiro nï¿½o existe");
+                System.out.println("Alguma das centrais de bombeiro não existe");
             } 
- /* O conteï¿½do de uma mensagem envolvida neste protocolo ï¿½ automaticamente colocado entre parï¿½nteses. Com o mï¿½todo substring() podemos ler apenas o que estï¿½ dentro deles.*/
+ /* O conteúdo de uma mensagem envolvida neste protocolo é automaticamente colocado entre parênteses. Com o método substring() podemos ler apenas o que está dentro deles.*/
              
              else {
                 System.out.println("Falha na central de bombeiros " + failure.getSender().getName() +

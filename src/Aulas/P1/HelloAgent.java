@@ -7,6 +7,6 @@ public class HelloAgent extends Agent
     protected void setup()
     {
         System.out.println("Hello World. ");
-        System.out.println("Meu nome Ã© " + getLocalName());
+        System.out.println("Meu nome é " + getLocalName());
     }
 }

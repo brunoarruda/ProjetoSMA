@@ -1,17 +1,10 @@
 package Aulas.P4;
 
-import Aulas.P2.*;
-import Aulas.P1_2.*;
-import Aulas.P1.*;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class CriarAgenteArgs {
 
@@ -28,7 +21,7 @@ public class CriarAgenteArgs {
         addAgent(containerController, "Graca", AgenteImpressorArgs.class.getName(), tempo );
         
         tempo[0] = "400";
-        addAgent(containerController, "Jo√£o", AgenteImpressorArgs.class.getName(), tempo );
+        addAgent(containerController, "Jo„o", AgenteImpressorArgs.class.getName(), tempo );
 
         tempo[0] = "600";
         addAgent(containerController, "Carlos", AgenteImpressorArgs.class.getName(), tempo );

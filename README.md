@@ -1,4 +1,4 @@
 ProjetoSMA
 ==========
 
-Projeto de SMA: Alocação autônoma de tarefas entre programadores utilizando o paradigma multiagente.
+Projeto de SMA: Aloca��o autônoma de tarefas entre programadores utilizando o paradigma multiagente.

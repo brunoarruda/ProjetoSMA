@@ -1,17 +1,10 @@
 package Aulas.P4;
 
-import Aulas.P2.*;
-import Aulas.P1_2.*;
-import Aulas.P1.*;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class CriarAgente {
 

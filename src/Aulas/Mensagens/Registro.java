@@ -1,7 +1,6 @@
 package Aulas.Mensagens;
 
 import jade.core.Agent;
-import jade.core.AID;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.*;
 import jade.domain.FIPAException;
@@ -12,14 +11,14 @@ public class Registro extends Agent {
         DFAgentDescription dfd = new DFAgentDescription();
         dfd.setName(getAID()); //Informamos a AID do agente
 
-        //Vamos criar um serviï¿½o
+        //Vamos criar um serviço
         ServiceDescription sd = new ServiceDescription();
         sd.setType("Tipo"); //Tipo do Servico
-        sd.setName("Servico1"); //Nome do Serviï¿½o
-        //adicionamos o Serviï¿½o1
+        sd.setName("Servico1"); //Nome do Serviço
+        //adicionamos o Serviço1
         dfd.addServices(sd);
 
-        //Vamos criar outro serviï¿½o
+        //Vamos criar outro serviço
         sd = new ServiceDescription();
         sd.setType("Tipo de Servico");
         sd.setName("Servico2");
@@ -27,7 +26,7 @@ public class Registro extends Agent {
 
         //Vamos registrar o agente no DF
         try {
-            //register(agente que oferece, descriï¿½ï¿½o)
+            //register(agente que oferece, descrição)
             DFService.register(this, dfd);
 
         } catch (FIPAException e) {

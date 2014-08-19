@@ -43,22 +43,22 @@ public class AgenteFSM extends Agent{
             
         }, "Z");
         
-        //registramos o ï¿½ltimo estado - Y
+        //registramos o último estado - Y
         compFSM.registerLastState(new OneShotBehaviour(this) {
     
             public void action() {
-              System.out.println("Executando meu ï¿½ltimo comportamento.");
+              System.out.println("Executando meu último comportamento.");
             }
         }, "Y");
   
-        //definimos as transiï¿½ï¿½es
+        //definimos as transições
         compFSM.registerTransition("X", "Z", 0);  //X --> Z, caso onEnd() do X retorne 0
         compFSM.registerTransition("X", "Y", 1);  //X --> Y, caso onEnd() do X retorne 1 
         
-        //definimos uma transiï¿½ï¿½o padrï¿½o (nï¿½o importa tipo de retorno)
-        //como a mï¿½quina ï¿½ finita, temos que zerar os estados X e Z --> new String[]{"X","Z"}
+        //definimos uma transição padrão (não importa tipo de retorno)
+        //como a máquina é finita, temos que zerar os estados X e Z --> new String[]{"X","Z"}
         compFSM.registerDefaultTransition("Z", "X", new String[]{"X","Z"});
-       //Podemos tambï¿½m registrar uma transiï¿½ï¿½o quando o estado Z retornar 2
+       //Podemos também registrar uma transição quando o estado Z retornar 2
        //compFSM.registerTransition("Z", "X", 2);  
         
         //acionamos o comportamento

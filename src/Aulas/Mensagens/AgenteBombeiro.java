@@ -13,8 +13,8 @@ public class AgenteBombeiro extends Agent{
                 ACLMessage msg = myAgent.receive();
                 if(msg != null) {
                     String content = msg.getContent();
-            //com equalsIgnoreCase fazemos uma comparacao
-            //nï¿½o case-sensitive.
+            //com equalsIgnoreCase fazemos uma comparação
+            //não case-sensitive.
                    if(content.equalsIgnoreCase("Fogo")) {
                        System.out.println("O agente " + msg.getSender().getName() +
                                " avisou de um incendio");

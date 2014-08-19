@@ -1,7 +1,6 @@
 package Aulas.P2;
 
 import jade.core.Agent;
-import jade.core.AID;
 
 public class CompradorDeLivros extends Agent
 {
@@ -10,7 +9,7 @@ public class CompradorDeLivros extends Agent
     protected void setup()
     {
         //imprime mensagem de Bem-Vindo
-    System.out.println("Ol√°!!! Eu sou o Agente Comprador "+ getLocalName() +" e estou pronto para comprar!");
+    System.out.println("Ol·!!! Eu sou o Agente Comprador "+ getLocalName() +" e estou pronto para comprar!");
         
         //captura o titulo do livro que comprara, que foi passado como argumento de inicializacao
         Object[] args = getArguments();
@@ -21,12 +20,12 @@ public class CompradorDeLivros extends Agent
         }else 
         {
             //finaliza o agente
-           System.out.println("N√£o tenho livros para comprar!");
+           System.out.println("N„o tenho livros para comprar!");
            doDelete(); //invoca a execucao do metodo takeDown()
         }
     }
     
     protected void takeDown() {
-           System.out.println("Agente Comprador" + getAID().getName() + " est√° finalizado");
+           System.out.println("Agente Comprador" + getAID().getName() + " est· finalizado");
     }
 }

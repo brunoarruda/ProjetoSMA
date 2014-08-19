@@ -10,7 +10,7 @@ public class RemoverComportamentos extends Agent
     protected void setup()
     {
         System.out.println("Sou o agente " + getLocalName());
-        //Cria√ß√£o do primeiro comportamento
+        //CriaÁ„o do primeiro comportamento
         comp = new MeuComportamento1();
         //Aqui es donde se a√±ade el comportamiento.
         addBehaviour(comp);

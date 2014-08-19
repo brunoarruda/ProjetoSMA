@@ -12,7 +12,7 @@ public class ComportamentoOneShot extends OneShotBehaviour
         //codigo a ser executado
         System.out.println("Estou no comportamento onShot()");
         myAgent.doDelete();
-        System.out.println("O mÃ©todo action() vai executar todos seus comandos, mesmo com a chamada do mÃ©todo doDelete()");
-        System.out.println("Porque quem controla a execuÃ§Ã£o dos comportamentos Ã© o escalonador da plataforma JADE");
+        System.out.println("O método action() vai executar todos seus comandos, mesmo com a chamada do método doDelete()");
+        System.out.println("Porque quem controla a execução dos comportamentos é o escalonador da plataforma JADE");
     }
 }

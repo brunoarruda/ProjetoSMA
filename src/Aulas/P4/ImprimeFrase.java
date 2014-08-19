@@ -16,7 +16,7 @@ public ImprimeFrase(Agent a, long delay) {
     public void action() {
         
         //System.out.println("Estado do agente no action() ANTES do block(): " + this.isRunnable());
-        System.out.println("\nTempo " + (System.currentTimeMillis()  - tempoInicial)  + ": Meu nome Ã© " + myAgent.getLocalName());
+        System.out.println("\nTempo " + (System.currentTimeMillis()  - tempoInicial)  + ": Meu nome é " + myAgent.getLocalName());
         block(delay);
         //System.out.println("Estado do agente no action() DEPOIS do block(): " + this.isRunnable());
         numExecucao = numExecucao+1;
@@ -29,7 +29,7 @@ public ImprimeFrase(Agent a, long delay) {
     
     public int onEnd() {
         
-       System.out.println(myAgent.getLocalName() + ": Meu comportamento foi finalizado! AtÃ© mais...");
+       System.out.println(myAgent.getLocalName() + ": Meu comportamento foi finalizado! Até mais...");
        return 0;
         }
 }

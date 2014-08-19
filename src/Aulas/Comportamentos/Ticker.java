@@ -12,7 +12,7 @@ public class Ticker extends Agent {
                   {
                       stop();
                   }else
-                    //getTickCount() retorna o nï¿½mero de execuï¿½ï¿½es
+                    //getTickCount() retorna o número de execuções
                     //do comportamento.
                     System.out.println("Estou realizando meu " + getTickCount() + " tick");
                  }
