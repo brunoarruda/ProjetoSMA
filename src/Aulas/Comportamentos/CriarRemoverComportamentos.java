@@ -1,4 +1,4 @@
-package Comportamentos;
+package Aulas.Comportamentos;
 
 import jade.core.Profile;
 import jade.core.ProfileImpl;

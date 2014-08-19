@@ -1,3 +1,5 @@
+package Aulas.Mensagens;
+
 import jade.core.Agent;
 import jade.core.AID;
 import jade.domain.AMSService;

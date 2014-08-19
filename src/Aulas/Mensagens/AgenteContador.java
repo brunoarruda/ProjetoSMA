@@ -1,3 +1,4 @@
+package Aulas.Mensagens;
 
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;

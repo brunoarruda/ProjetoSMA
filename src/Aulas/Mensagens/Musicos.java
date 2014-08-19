@@ -1,3 +1,5 @@
+package Aulas.Mensagens;
+
 import jade.util.leap.Serializable;
 /* Uma classe que terá seus objetos
  * serializados deve implementar a interface Serializable */

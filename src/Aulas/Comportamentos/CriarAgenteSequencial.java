@@ -1,4 +1,4 @@
-package Comportamentos;
+package Aulas.Comportamentos;
 
 import P4.*;
 import P2.*;

@@ -1,4 +1,4 @@
-package P2;
+package Aulas.P2;
 
 import jade.core.Agent;
 import jade.core.AID;

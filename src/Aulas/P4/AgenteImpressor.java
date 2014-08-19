@@ -1,4 +1,4 @@
-package P4;
+package Aulas.P4;
 
 import jade.core.Agent;
 public class AgenteImpressor extends Agent {

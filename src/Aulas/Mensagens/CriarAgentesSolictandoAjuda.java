@@ -1,6 +1,6 @@
-package Mensagens;
+package Aulas.Mensagens;
 
-import P1.*;
+import Aulas.P1.*;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.wrapper.AgentController;

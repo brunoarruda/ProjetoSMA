@@ -1,7 +1,7 @@
-package P2;
+package Aulas.P2;
 
-import P1_2.*;
-import P1.*;
+import Aulas.P1_2.*;
+import Aulas.P1.*;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.wrapper.AgentController;

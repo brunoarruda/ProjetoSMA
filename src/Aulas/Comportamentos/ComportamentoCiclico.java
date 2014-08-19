@@ -1,4 +1,4 @@
-package Comportamentos;
+package Aulas.Comportamentos;
 
 import jade.core.behaviours.CyclicBehaviour;
 public class ComportamentoCiclico extends CyclicBehaviour {

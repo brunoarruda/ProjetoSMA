@@ -1,4 +1,4 @@
-package P4;
+package Aulas.P4;
 
 import jade.core.Agent;
 import jade.core.behaviours.Behaviour;

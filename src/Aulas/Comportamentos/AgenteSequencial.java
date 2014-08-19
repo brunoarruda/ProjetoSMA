@@ -1,4 +1,4 @@
-package Comportamentos;
+package Aulas.Comportamentos;
 
 import jade.core.Agent;import jade.core.behaviours.OneShotBehaviour;
 import jade.core.behaviours.SequentialBehaviour;
