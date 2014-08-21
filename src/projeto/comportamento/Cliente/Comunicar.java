@@ -21,7 +21,7 @@ public class Comunicar extends OneShotBehaviour {
 	public void action() {
 		// TODO Auto-generated method stub
 
-		// CriaÃ§Ã£o do objeto ACLMessage
+		// Criação do objeto ACLMessage
 		ACLMessage mensagem = new ACLMessage(ACLMessage.INFORM);
 
 		// Preencher os campos necesários da mensagem

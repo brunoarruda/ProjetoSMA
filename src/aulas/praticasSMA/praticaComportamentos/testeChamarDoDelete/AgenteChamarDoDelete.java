@@ -23,6 +23,6 @@ public class AgenteChamarDoDelete extends Agent
    protected void takeDown()
    {
       System.out.println("Tempo no takeDown(): " + (System.currentTimeMillis()  - tempoInicial));
-      System.out.println("ExecuÃ§Ã£o finalizada");
+      System.out.println("Execução finalizada");
    }
 }

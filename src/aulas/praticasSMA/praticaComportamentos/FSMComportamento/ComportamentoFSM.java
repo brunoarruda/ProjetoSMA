@@ -13,7 +13,7 @@ public class ComportamentoFSM extends FSMBehaviour
    private static final String THREE_STATE = "EstadoTres";
    private static final String ERROR_STATE= "EstadoZero";
    
-   //Define as constantes das transiÃ§Ãµes
+   //Define as constantes das transições
    private final int UM = 1;
    private final int DOIS = 2;
    private final int TRES = 3;
@@ -37,7 +37,7 @@ private int transicao=0;
       registerState(new ThreeBehaviour(), THREE_STATE);
       registerLastState(new ErrorBehaviour(),ERROR_STATE);
       
-      //Define as transiÃ§Ãµes entre os estados 
+      //Define as transições entre os estados 
       registerTransition(ONE_STATE, TWO_STATE, DOIS);
       registerTransition(TWO_STATE, THREE_STATE,TRES);
       registerTransition(THREE_STATE,ONE_STATE,UM);
@@ -47,12 +47,12 @@ private int transicao=0;
    }
  
    /*
-    * MÃ©todo chamado apÃ³s a execuÃ§Ã£o de cada sub-comportamento (cada filho), 
-    * com o objetivo de verificar se o CompositeBehaviour deve terminar, ou nÃ£o
+    * Método chamado após a execução de cada sub-comportamento (cada filho), 
+    * com o objetivo de verificar se o CompositeBehaviour deve terminar, ou não
     */
    protected boolean checkTermination(boolean currentDone,int currentResult)
    {
-      System.out.println("   ** Terminado estado nÃºmero: " + currentName);
+      System.out.println("   ** Terminado estado número: " + currentName);
       System.out.println("-----------------------------");
       return super.checkTermination(currentDone,currentResult);
    }
@@ -73,7 +73,7 @@ private int transicao=0;
      
       /*
       int tipoEvento;
-      String mensagem = "VocÃª estÃ¡ no estado " + currentName;
+      String mensagem = "Você está no estado " + currentName;
       mensagem = mensagem + "\nDigite o evento a ser executado (1, 2, 3 ou 0): ";
       tipoEvento = Integer.parseInt(JOptionPane.showInputDialog(mensagem));
       return tipoEvento;

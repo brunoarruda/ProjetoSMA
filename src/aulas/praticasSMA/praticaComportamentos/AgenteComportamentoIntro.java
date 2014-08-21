@@ -6,7 +6,7 @@ import jade.core.Agent;
 public class AgenteComportamentoIntro extends Agent
 {
     protected void setup(){
-       System.out.println("Ol√°, eu sou um agente.");
+       System.out.println("Ol·, eu sou um agente.");
        System.out.println("Estou disparando meu comportamento ...");
        addBehaviour(new MeuPrimeiroComportamento(this));                        
        addBehaviour(new MeuSegundoComportamento(this));   

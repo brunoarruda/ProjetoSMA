@@ -42,5 +42,5 @@ public class AgenteFIPARequestAlarmado extends Agent
       {
          System.out.println("Especifique o nome de pelo menos uma central de bombeiros");
       }
-   }//Fim do mÃ©todo setup()
+   }//Fim do método setup()
 }//Fim da classe AgenteFIPARequestAlarmado

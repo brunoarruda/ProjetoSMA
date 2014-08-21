@@ -32,7 +32,7 @@ public class CriarAgentesSocorro
         //addAgent(containerController, "rma", "jade.tools.rma.rma", null);
         addAgent(containerController, "rma", jade.tools.rma.rma.class.getName(), null);
         
-        //Criando o agente Sniffer e definindo quais agentes ele ir√° controlar
+        //Criando o agente Sniffer e definindo quais agentes ele ir· controlar
         addAgent(containerController, "Sniffer", "jade.tools.sniffer.Sniffer", 
            new Object[]{"Solicitante", ";", "Bombeiro", ";", "Policial", ";", "Medico", ";","df"});
     }

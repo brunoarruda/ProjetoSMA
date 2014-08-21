@@ -30,8 +30,8 @@ public class ComportamentoContador extends SimpleBehaviour
    }
    
    /*
-    * O mÃ©todo onEnd() Ã© chamado depois que o mÃ©todo done() retornar 
-    * o valor true. E apÃ³s o comportamento ter sido movido para a 
+    * O método onEnd() é chamado depois que o método done() retornar 
+    * o valor true. E após o comportamento ter sido movido para a 
     * lista de comportamentos bloqueados
     */
    public int onEnd()

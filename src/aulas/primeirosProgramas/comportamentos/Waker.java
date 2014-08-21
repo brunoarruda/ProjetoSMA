@@ -12,7 +12,7 @@ public class Waker extends Agent {
 		protected void onWake() {
 		   System.out.println("Estou no comportamento WakerBehaviour");
                    System.out.println("Irei executar apenas uma vez este comportamento.");
-                   System.out.println("E apÃ³s um minuto depois de ter sido disparado.");
+                   System.out.println("E após um minuto depois de ter sido disparado.");
 		}
     });
    }

@@ -27,7 +27,7 @@ public class ComportamentoReceptor extends SimpleBehaviour
          System.out.println(mensagem.toString());
          fim = true;
       }
-   } // Fim do mÃ©todo action()
+   } // Fim do método action()
             
    public boolean done()
    {

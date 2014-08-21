@@ -8,5 +8,5 @@ public class AgenteTutor extends Agent
     protected void setup()
     {
 
-    } //Fim do mÃ©todo setup()
+    } //Fim do método setup()
 }

@@ -11,7 +11,7 @@ public class AgenteBuscaAMS extends Agent
 {
    protected void setup() 
    {
-      /*Este tempo de sincronizaÃ§Ã£o Ã© importante para dar um tempo
+      /*Este tempo de sincronização é importante para dar um tempo
       *para o agente Sniffer iniciar suas atividades.
       */       
       try
@@ -25,7 +25,7 @@ public class AgenteBuscaAMS extends Agent
       
       try 
       {
-         //CriaÃ§Ã£o de um objeto capaz de ser manipulado pelo AMS
+         //Criação de um objeto capaz de ser manipulado pelo AMS
          AMSAgentDescription[] agentes = null;
          
          //Crio objeto SearchConstraints para definir

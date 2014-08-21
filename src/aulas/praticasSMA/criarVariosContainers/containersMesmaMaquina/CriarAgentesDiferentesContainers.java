@@ -13,7 +13,7 @@ public class CriarAgentesDiferentesContainers
    static AgentController agentController;
    static AgentContainer container[] = new AgentContainer [2];
    
-   static jade.core.Runtime runtime;
+   static jade.core.Runtime runtime;	
 
    public static void main(String[] args) throws InterruptedException 
    {
@@ -29,14 +29,14 @@ public class CriarAgentesDiferentesContainers
       //adicionando agente
       //SINTAXE: addAgent(container, nome_do_agente, classe, parametros de inicializacao)
       String[] argumento = new String[1];
-      argumento[0] = "Tiro dÃºvidas sobre o nÃ­vel micro de SMAs";
+      argumento[0] = "Tiro dúvidas sobre o nÃ­vel micro de SMAs";
       //argumento = null;
       addAgentContainer(container[0], "AgenteTutorSMA", AgenteTutorSMA.class.getName(), argumento);
       String[] argumento1 = new String[1];
-      argumento1[0] = "Tiro dÃºvidas sobre comandos sequenciais e de desvio condicional, na linguagem Java";
+      argumento1[0] = "Tiro dúvidas sobre comandos sequenciais e de desvio condicional, na linguagem Java";
       addAgentContainer(container[0], "AgenteTutorPI", AgenteTutorPI.class.getName(), argumento1);
       String[] argumento2 = new String[1];
-      argumento2[0] = "Tiro dÃºvidas sobre conceitos teÃ³ricos de LÃ³gica Fuzzy";
+      argumento2[0] = "Tiro dúvidas sobre conceitos teóricos de Lógica Fuzzy";
       addAgentContainer(container[0], "AgenteTutorLogicaFuzzy", AgenteTutorLogicaFuzzy.class.getName(), argumento2);
 
       String[] argumento3 = new String[1];

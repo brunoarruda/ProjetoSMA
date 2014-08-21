@@ -64,7 +64,7 @@ public class ComportamentoParticipante extends AchieveREResponder
    {
       if (Math.random() > 0.2) 
       {
-         System.out.println("Central " + myAgent.getLocalName() + ": Voltamos da tarefa de apagar o fogo. Sucesso na miss√£o!");
+         System.out.println("Central " + myAgent.getLocalName() + ": Voltamos da tarefa de apagar o fogo. Sucesso na miss„o!");
          ACLMessage inform = request.createReply();
          inform.setPerformative(ACLMessage.INFORM);
          return inform; //envia mensagem INFORM

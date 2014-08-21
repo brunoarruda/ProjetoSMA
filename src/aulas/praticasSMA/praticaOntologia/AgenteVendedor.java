@@ -48,7 +48,7 @@ public class AgenteVendedor extends Agent
       getContentManager().registerOntology(ontologia);
  
       addBehaviour(new ComportamentoVendedor(this, codec, ontologia));
-   }//Fim do mÃ©todo setup()
+   }//Fim do método setup()
  
    protected void takeDown() 
    {

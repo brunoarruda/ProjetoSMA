@@ -19,6 +19,6 @@ public class AgenteParaleloContador extends Agent
    }
    protected void takeDown()
    {
-      System.out.println("ExecuÃ§Ã£o Finalizada");
+      System.out.println("Execução Finalizada");
    }
 }

@@ -14,7 +14,7 @@ public class MeuSegundoComportamento extends Behaviour
     }   
     
     public void action() {
-       System.out.println(" Meu nome Ã©: " + myAgent.getLocalName());
+       System.out.println(" Meu nome é: " + myAgent.getLocalName());
        System.out.println(" Sou o segundo comportamento de " + myAgent.getLocalName());
     }
 

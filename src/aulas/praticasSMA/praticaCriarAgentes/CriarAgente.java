@@ -19,14 +19,14 @@ public class CriarAgente {
         //adicionando agente
         //SINTAXE: addAgent(container, nome_do_agente, classe, parametros de inicializacao)
         String[] argumento = new String[1];
-        argumento[0] = "Tiro dÃºvidas sobre o nÃ­vel micro de SMAs";
+        argumento[0] = "Tiro dúvidas sobre o nÃ­vel micro de SMAs";
         //argumento = null;
         addAgent(containerController, "AgenteTutorSMA", AgenteTutorSMA.class.getName(), argumento);
         String[] argumento1 = new String[1];
-        argumento1[0] = "Tiro dÃºvidas sobre comandos sequenciais e de desvio condicional, na linguagem Java";
+        argumento1[0] = "Tiro dúvidas sobre comandos sequenciais e de desvio condicional, na linguagem Java";
         addAgent(containerController, "AgenteTutorPI", AgenteTutorPI.class.getName(), argumento1);
         String[] argumento2 = new String[1];
-        argumento2[0] = "Tiro dÃºvidas sobre conceitos teÃ³ricos de LÃ³gica Fuzzy";
+        argumento2[0] = "Tiro dúvidas sobre conceitos teóricos de Lógica Fuzzy";
         addAgent(containerController, "AgenteTutorLogicaFuzzy", AgenteTutorLogicaFuzzy.class.getName(), argumento2);
 
         String[] argumento3 = new String[1];

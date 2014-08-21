@@ -34,7 +34,7 @@ public class ComportamentoEscalaMusical extends Behaviour
        estado++;
     }
 
-    //Verifica se o comportamento estÃ¡ finalizado, ou nÃ£o
+    //Verifica se o comportamento está finalizado, ou não
     public boolean done() 
     {
        return (estado > 7);

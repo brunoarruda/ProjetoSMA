@@ -22,7 +22,7 @@ public class AgenteAlarmado2 extends Agent
      
       addBehaviour(new EnviarMensagem(this));
       addBehaviour(new ReceberMensagem(this));     
-   }//Fim do mÃ©todo setup()
+   }//Fim do método setup()
 
    //CRIANDO AS CLASSES PRIVADAS
    private class EnviarMensagem extends OneShotBehaviour 
@@ -40,7 +40,7 @@ public class AgenteAlarmado2 extends Agent
          msg.setOntology("Emergencia");
          msg.setContent("Fogo");
          myAgent.send(msg);
-      }//FIm do mÃ©todo action()
+      }//FIm do método action()
    }//Fim da classe EnviarMensagem
        
    private class ReceberMensagem extends CyclicBehaviour 

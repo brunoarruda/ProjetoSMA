@@ -12,25 +12,25 @@ public class AgenteAluno extends Agent
        String mensagem="";
        super.setup();
        
-       //monta a mensagem de boas vindas e com informa√ß√µes gerais   
-       mensagem = "Ol√°!!! Eu sou o Agente Aluno " + getAID().getLocalName();
-       mensagem = mensagem + "\nMeu nome na plataforma √© " + getAID().getName();
+       //monta a mensagem de boas vindas e com informaÁıes gerais   
+       mensagem = "Ol·!!! Eu sou o Agente Aluno " + getAID().getLocalName();
+       mensagem = mensagem + "\nMeu nome na plataforma È " + getAID().getName();
        
-       mensagem = mensagem + "\nMeus endere√ßos na plataforma s√£o: ";
+       mensagem = mensagem + "\nMeus endereÁos na plataforma s„o: ";
        Iterator<?> it = getAID().getAllAddresses();
        while(it.hasNext()) 
        {
           mensagem = mensagem + "- " + it.next() + "\n";
        }
-       mensagem = mensagem + "Meu estado atual √©: " + getAgentState();
+       mensagem = mensagem + "Meu estado atual È: " + getAgentState();
        
        System.out.println(mensagem);                
 
-    }//Fim do m√©todo main()
+    }//Fim do mÈtodo main()
 
     protected void takeDown() 
     {
         System.out.println("Agente Aluno" + getAID().getName() + 
-                   " est√° finalizado");
+                   " est· finalizado");
     }
 }

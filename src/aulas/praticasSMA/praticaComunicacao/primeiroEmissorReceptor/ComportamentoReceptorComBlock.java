@@ -29,7 +29,7 @@ public class ComportamentoReceptorComBlock extends SimpleBehaviour
          System.out.println("Receptor: Bloqueado para esperar receber mensagem.....");
          block();
       }
-   } // Fim do mÃ©todo action()
+   } // Fim do método action()
    public boolean done()
    {
       return fim;

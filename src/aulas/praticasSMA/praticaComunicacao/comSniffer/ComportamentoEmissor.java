@@ -15,16 +15,16 @@ public class ComportamentoEmissor extends SimpleBehaviour
    public void action()
    {
       System.out.println(myAgent.getLocalName() +": Preparando para enviar una mensagem ao receptor");
-      // Cria√ß√£o do objeto ACLMessage
+      // CriaÁ„o do objeto ACLMessage
       ACLMessage mensagem = new ACLMessage(ACLMessage.INFORM);
-      //Preencher os campos neces√°rios da mensagem
+      //Preencher os campos neces·rios da mensagem
       mensagem.setSender(myAgent.getAID());
       mensagem.addReceiver(new AID("Receptor",AID.ISLOCALNAME));
       mensagem.setLanguage("Portugues");
-      mensagem.setContent("Ol√°, como voc√™ vai Receptor?");
+      mensagem.setContent("Ol·, como vocÍ vai Receptor?");
       //Envia a mensagem aos destinatarios
       myAgent.send(mensagem);
-      System.out.println(myAgent.getLocalName() +": Enviando ol√° ao receptor");
+      System.out.println(myAgent.getLocalName() +": Enviando ol· ao receptor");
       System.out.println(myAgent.getLocalName() + "\n" + mensagem.toString());
       fim = true;
    }

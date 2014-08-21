@@ -26,7 +26,7 @@ public class AgenteSequencial extends Agent{
         comportamento.addSubBehaviour(new WakerBehaviour(this, 500) {
             long t0 = System.currentTimeMillis();
             protected void onWake() {
-                System.out.println((System.currentTimeMillis() - t0) +": Executei meu primeiro comportamento apÃ³s meio segundo!");
+                System.out.println((System.currentTimeMillis() - t0) +": Executei meu primeiro comportamento após meio segundo!");
             }
         });
         

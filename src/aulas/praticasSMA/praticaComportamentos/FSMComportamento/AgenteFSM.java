@@ -11,7 +11,7 @@ public class AgenteFSM extends Agent
    {
       entrada="231";
       
-      System.out.println("Estou no comeÃ§o do agente");
+      System.out.println("Estou no começo do agente");
       System.out.println("entrada = " + entrada);
       System.out.println("-----------------------------");
       

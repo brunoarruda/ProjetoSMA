@@ -6,12 +6,12 @@ import jade.core.Agent;
 public class AgenteEscalaMusical extends Agent
 {
     protected void setup(){
-       System.out.println("Ol√°, eu sou um agente.");
+       System.out.println("Ol·, eu sou um agente.");
        System.out.println("Estou disparando meu comportamento ...");
        addBehaviour(new ComportamentoEscalaMusical(this));                        
     }
     
-    // Finaliza√ß√£o do agente
+    // FinalizaÁ„o do agente
     protected void takeDown()
     {
        System.out.println("A escala musical terminou");

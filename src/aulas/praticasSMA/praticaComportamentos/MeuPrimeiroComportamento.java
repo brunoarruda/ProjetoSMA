@@ -14,7 +14,7 @@ public class MeuPrimeiroComportamento extends Behaviour
     }   
     
     public void action() {
-       System.out.println(" Meu nome Ã©: " + myAgent.getLocalName());
+       System.out.println(" Meu nome é: " + myAgent.getLocalName());
        System.out.println(" Sou o primeiro comportamento de " + myAgent.getLocalName());
     }
 

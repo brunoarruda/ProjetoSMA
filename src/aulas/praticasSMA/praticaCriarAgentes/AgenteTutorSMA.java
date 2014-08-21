@@ -10,39 +10,39 @@ public class AgenteTutorSMA extends AgenteTutor
        String servico = "", mensagem="";
        super.setup();
 
-       //monta a mensagem de boas vindas e com informa√ß√µes gerais   
-       mensagem = "Ol√°!!! Eu sou o Agente Tutor " + getAID().getLocalName();
-       mensagem = mensagem + "\nMeu nome na plataforma √© " + getAID().getName();
+       //monta a mensagem de boas vindas e com informaÁıes gerais   
+       mensagem = "Ol·!!! Eu sou o Agente Tutor " + getAID().getLocalName();
+       mensagem = mensagem + "\nMeu nome na plataforma È " + getAID().getName();
        
-       mensagem = mensagem + "\nMeus endere√ßos na plataforma s√£o: ";
+       mensagem = mensagem + "\nMeus endereÁos na plataforma s„o: ";
        Iterator<?> it = getAID().getAllAddresses();
        while(it.hasNext()) 
        {
           mensagem = mensagem + "- " + it.next() + "\n";
        }
-       mensagem = mensagem + "Meu estado atual √©: " + getAgentState();
+       mensagem = mensagem + "Meu estado atual È: " + getAgentState();
  
-       //captura o servi√ßo que o agente oferecer√° √† ag√™ncia
+       //captura o serviÁo que o agente oferecer· √† agÍncia
       
        Object[] argumentos = getArguments();
  
        if(argumentos != null && argumentos.length>0)
        {
           servico = (String) argumentos[0];
-          mensagem = mensagem + "\nPosso realizar o seguinte servi√ßo: " + servico;
+          mensagem = mensagem + "\nPosso realizar o seguinte serviÁo: " + servico;
         }else 
         {
            //finaliza o agente
-           mensagem = mensagem + "\nN√£o posso realizar nenhum servi√ßo na sociedade";
+           mensagem = mensagem + "\nN„o posso realizar nenhum serviÁo na sociedade";
            doDelete(); //invoca a execucao do metodo takeDown()
         } 
          System.out.println(mensagem);                
 
-    }//Fim do m√©todo main()
+    }//Fim do mÈtodo main()
 
     protected void takeDown() 
     {
         System.out.println("Agente Tutor" + getAID().getName() + 
-                   " est√° finalizado");
+                   " est· finalizado");
     }
 }

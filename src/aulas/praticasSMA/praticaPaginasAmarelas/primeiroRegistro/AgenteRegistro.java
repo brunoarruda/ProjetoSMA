@@ -19,21 +19,21 @@ public class AgenteRegistro extends Agent
          System.out.println("Erro: " + e);
       }
  
-      //DescriÃ§Ã£o do agente que oferecera um serviÃ§o (Servico 1)
+      //Descrição do agente que oferecera um serviço (Servico 1)
       DFAgentDescription dfd = new DFAgentDescription();
       dfd.setName(getAID()); //Informamos a AID do agente
-      //DefiniÃ§Ã£o e descriÃ§Ã£o do serviÃ§o
+      //Definição e descrição do serviço
       ServiceDescription sd = new ServiceDescription();
       sd.setType("Tipo 1"); //Tipo do Servico
       sd.setName("Servico1"); //Nome do Servico
-      //InserÃ§Ã£o do serviÃ§o na lista de serviÃ§os da descricao do agente
+      //Inserção do serviço na lista de serviços da descricao do agente
       dfd.addServices(sd);
       
       //Vamos criar outro servico (Servico 2)
       sd = new ServiceDescription();
       sd.setType("Tipo 2");
       sd.setName("Servico2");
-      //InserÃ§Ã£o do serviÃ§o na lista de serviÃ§os da descricao do agente
+      //Inserção do serviço na lista de serviços da descricao do agente
       dfd.addServices(sd);
       //Vamos registrar o agente no DF
       try 

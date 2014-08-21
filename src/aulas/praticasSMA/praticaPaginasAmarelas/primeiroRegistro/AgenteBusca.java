@@ -12,7 +12,7 @@ public class AgenteBusca extends Agent
 {
    protected void setup() 
    {
-      /*Este tempo de sincronizaÃ§Ã£o Ã© importante para dar um tempo
+      /*Este tempo de sincronização é importante para dar um tempo
       *para o AgenteRegistro iniciar suas atividades. Isto porque o 
       *AgenteBusca ira solicitar servicos do AgenteRegistro
       */
@@ -25,7 +25,7 @@ public class AgenteBusca extends Agent
          System.out.println("Erro: " + e);
       }
 
-     //CriaÃ§Ã£o de um objeto capaz de ser manipulado pelo DF 
+     //Criação de um objeto capaz de ser manipulado pelo DF 
      DFAgentDescription template = new DFAgentDescription();
 
      //crio um objeto contendo a descricao do servico

@@ -37,6 +37,6 @@ public class AgenteBombeiroFiltro extends Agent
                System.out.println("O agente " + msg.getSender().getName() + "avisou de um incendio");
             }
          }
-      }//Fim do mÃ©todo action()
+      }//Fim do método action()
    }//Fim da classe MensagemComFiltro
 }//Fim da classe AgenteBombeiroFiltro

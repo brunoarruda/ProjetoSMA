@@ -12,7 +12,7 @@ public class AgenteBombeiro extends Agent
 {
    protected void setup() 
    {
-      /*Este tempo de sincronizaÃ§Ã£o Ã© importante para dar um tempo
+      /*Este tempo de sincronização é importante para dar um tempo
       *para o agente Sniffer iniciar suas atividades.
       */
       try

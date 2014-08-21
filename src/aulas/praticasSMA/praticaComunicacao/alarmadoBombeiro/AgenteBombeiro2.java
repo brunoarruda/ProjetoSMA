@@ -39,6 +39,6 @@ public class AgenteBombeiro2 extends Agent
           } 
           else
              block();
-      } //Fim do mÃ©todo action()
+      } //Fim do método action()
    }//FIm da classe EnviarMensagem
 }
