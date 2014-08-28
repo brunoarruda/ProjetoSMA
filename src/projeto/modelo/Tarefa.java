@@ -1,34 +1,26 @@
 package projeto.modelo;
 
+import java.util.List;
+
 public class Tarefa {
-	
-	private int dificuldade;
-	private String nome;
-	private int tempoDeImplementacao;
-	
-	public int getDificuldade(){
-		return dificuldade;
-	}
-	
-	public String getNome(){
-		return nome;
-	}
-	
-	public int getTempo(){
-		return tempoDeImplementacao;
+
+	private List<Competencia> competencias;
+	public List<Competencia> getCompetencias() {
+		return competencias;
 	}
 
-	public void setDificuldade(int dificuldade) {
-		this.dificuldade = dificuldade;
+	public void setCompetencias(List<Competencia> competencias) {
+		this.competencias = competencias;
+	}
+
+	private String nome;
+	private int tempoDeImplementacao;
+
+	public String getNome() {
+		return nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public void setTempo(int tempoDeImplementacao) {
-		this.tempoDeImplementacao = tempoDeImplementacao;
-	}
-	
-	
 }

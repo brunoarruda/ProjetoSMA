@@ -1,45 +1,39 @@
 package projeto.agente;
 
-import projeto.comportamento.Cliente.Comunicar;
+import projeto.comportamento.cliente.*;
+import projeto.modelo.TiposServico;
 import jade.core.Agent;
-import jade.core.behaviours.OneShotBehaviour;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
 
 @SuppressWarnings("serial")
-public class AgenteCliente extends Agent
-{ 
+public class AgenteCliente extends Agent {
+
 	
-	private String agenteContato = "Janete";
+	private String agenteContato = "Agente_Diretor";
+	
 	private String msgPedidoDeServico = "ME AJUDAAAAAAA!";
-	
-    protected void setup()
-    {
-        System.out.println("Olá Sistema. ");
-        System.out.println("Sou o cliente: " + getLocalName());
-        System.out.println("Passo tudo o que tem que ser feito!\n");
-        
-        try{
-        Thread.sleep(3000);
-        
-        OneShotBehaviour comunicarMsg = new Comunicar(agenteContato,msgPedidoDeServico);
-        addBehaviour(comunicarMsg);
-        
-        //Mando mensagem para o programador requisitando a resolucao de uma tarefa
-        }catch(Exception e){}
-    }
-    
-    public String getAgenteContato() {
-		return agenteContato;
+
+	protected void setup() {
+		try {
+			// Sleep para segurar o sistema enquanto o sniffer não inicia
+			Thread.sleep(3000);
+
+			// Crio a descrição do serviço que eu procuro
+			ServiceDescription servicoProcurado = new ServiceDescription();
+			// o serviço que eu quero
+			servicoProcurado
+					.setType(TiposServico.BUSCA_DISPONIBILIDADE_HOTEIS
+							.toString());
+			// busco por quem ofereça o serviço que eu quero
+			buscarServicos(servicoProcurado);
+
+		} catch (Exception e) {
+		}
 	}
 
-	public void setAgenteContato(String agenteContato) {
-		this.agenteContato = agenteContato;
+	private void buscarServicos(ServiceDescription servicoProcurado) {
+		// A cada segundo tenta buscar por agentes que fornecam o servico
+		addBehaviour(new BuscaServico(this, 1000, servicoProcurado));
 	}
 
-	public String getMsgPedidoDeServico() {
-		return msgPedidoDeServico;
-	}
-
-	public void setMsgPedidoDeServico(String msgPedidoDeServico) {
-		this.msgPedidoDeServico = msgPedidoDeServico;
-	}
 }

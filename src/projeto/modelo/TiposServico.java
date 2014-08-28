@@ -1,0 +1,5 @@
+package projeto.modelo;
+
+public enum TiposServico {
+		BUSCA_DISPONIBILIDADE_HOTEIS, ORCAMENTO_HOTEL, RESERVA_HOTEL, PAGAMENTO_ONLINE;
+}

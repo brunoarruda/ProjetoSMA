@@ -1,3 +1,4 @@
+
 package projeto;
 
 import projeto.agente.*;
@@ -21,19 +22,33 @@ public class IniciarSMA {
         //adicionando agente
         //SINTAXE: addAgent(container, nome_do_agente, classe, parametros de inicializacao 
 
-        addAgent(containerController, "Bruno", AgenteProgramador.class.getName(), null);
-        addAgent(containerController, "Janete", AgenteSecretaria.class.getName(), null);
-        addAgent(containerController, "Graca", AgenteCliente.class.getName(), null);
+        //Varios agentes Programadores
+        addAgent(containerController, "Agente_Programador1", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador2", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador3", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador4", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador5", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador6", AgenteProgramador.class.getName(), null);
+        addAgent(containerController, "Agente_Programador7", AgenteProgramador.class.getName(), null);
+        
+        //Um agente Gerente
+        addAgent(containerController, "Agente_Gerente", AgenteGerente.class.getName(), null);
+        
+        //Um agente Secretária
+        addAgent(containerController, "Agente_Diretor", AgenteDiretor.class.getName(), null);
+        
+        //Um agente Cliente
+        addAgent(containerController, "Agente_Cliente", AgenteCliente.class.getName(), null);
         
         
         //adicionando agente RMA
-        //addAgent(containerController, "rma", "jade.tools.rma.rma", null);
+        addAgent(containerController, "rma", "jade.tools.rma.rma", null);
         //addAgent(containerController, "rma", jade.tools.rma.rma.class.getName(), null);
         
         
-        //Criando o agente Sniffer e definindo quais agentes ele irá controlar
+        //Criando o agente Sniffer e definindo quais agentes ele irï¿½ controlar
         addAgent(containerController, "Sniffer", "jade.tools.sniffer.Sniffer", 
-                                       new Object[]{"Graca", ";", "Janete"});      
+                                       new Object[]{"Agente_Gerente", ";", "Agente_Diretor", ";", "Agente_Cliente", ";", "Agente_Programador1"});      
     }
 
     public static void startMainContainer(String host, String port) {

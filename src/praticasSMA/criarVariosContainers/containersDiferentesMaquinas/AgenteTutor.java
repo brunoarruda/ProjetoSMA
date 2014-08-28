@@ -1,0 +1,12 @@
+package praticasSMA.criarVariosContainers.containersDiferentesMaquinas;
+
+import jade.core.Agent;
+
+@SuppressWarnings("serial")
+public class AgenteTutor extends Agent
+{    
+    protected void setup()
+    {
+
+    } //Fim do método setup()
+}
