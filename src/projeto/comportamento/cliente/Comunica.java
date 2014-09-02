@@ -1,17 +1,17 @@
-package projeto.comportamento.diretor;
+package projeto.comportamento.cliente;
 
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
 
 @SuppressWarnings("serial")
-public class Comunicar extends OneShotBehaviour {
+public class Comunica extends OneShotBehaviour {
 
 	private String agenteAlvo;
 	private String conteudo;
 	private String linguagem;
 	
-	public Comunicar(String agenteAlvo, String conteudo){
+	public Comunica(String agenteAlvo, String conteudo){
 		this.agenteAlvo = agenteAlvo;
 		this.conteudo = conteudo;
 		this.linguagem = "Portugues";
@@ -19,11 +19,12 @@ public class Comunicar extends OneShotBehaviour {
 	
 	@Override
 	public void action() {
-		
-		// Criaï¿½ï¿½o do objeto ACLMessage
+		// TODO Auto-generated method stub
+
+		// Criação do objeto ACLMessage
 		ACLMessage mensagem = new ACLMessage(ACLMessage.INFORM);
 
-		// Preencher os campos necessï¿½rios da mensagem
+		// Preencher os campos necesários da mensagem
 		mensagem.setSender(myAgent.getAID());
 		mensagem.addReceiver(new AID(agenteAlvo, AID.ISLOCALNAME));
 		mensagem.setLanguage(linguagem);

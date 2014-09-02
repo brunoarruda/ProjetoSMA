@@ -15,8 +15,8 @@ public class AgenteProgramador extends Agent
 	
     protected void setup()
     {
-        System.out.println("Olï¿½ Sistema. ");
-        System.out.println("Sou o melhor programador e meu nome ï¿½ " + getLocalName());
+        System.out.println("Olá Sistema. ");
+        System.out.println("Sou o melhor programador e meu nome é" + getLocalName());
         System.out.println("Resolvo TUDO!\n");
     }
 }
