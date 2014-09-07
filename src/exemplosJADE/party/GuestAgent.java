@@ -41,7 +41,7 @@ Boston, MA  02111-1307, USA.
 
 // Package
 ///////////////
-package jadeexamples.party;
+package exemplosJADE.party;
 
 // Imports
 ///////////////

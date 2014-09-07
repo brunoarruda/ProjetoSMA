@@ -1,4 +1,4 @@
-package jadeexamples.party;
+package exemplosJADE.party;
 
 import jade.core.Profile;
 import jade.core.ProfileImpl;
