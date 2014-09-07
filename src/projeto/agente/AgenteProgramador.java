@@ -1,22 +1,31 @@
 package projeto.agente;
 
-import java.util.List;
+import java.util.EnumSet;
 
-import projeto.modelo.Competencia;
+import projeto.comportamento.programador.*;
 import projeto.modelo.*;
 import jade.core.Agent;
 
-
 @SuppressWarnings("serial")
-public class AgenteProgramador extends Agent
-{
-	private List<Competencia> competencias;
-	private Tarefa tarefa;
-	
-    protected void setup()
-    {
-        System.out.println("Olá Sistema. ");
-        System.out.println("Sou o melhor programador e meu nome é" + getLocalName());
-        System.out.println("Resolvo TUDO!\n");
-    }
+public class AgenteProgramador extends Agent {
+	private EnumSet<Competencia> competencias;
+	private int tempoOcupado = 0;
+
+	protected void setup() {
+		Object[] args = getArguments();
+		competencias = (EnumSet<Competencia>) args[0];
+		addBehaviour(new Delibera(this));
+	}
+
+	public EnumSet<Competencia> getCompetencias() {
+		return competencias;
+	}
+
+	public int getTempoOcupado() {
+		return tempoOcupado;
+	}
+
+	public void setTempoOcupado(int tempoOcupado) {
+		this.tempoOcupado = tempoOcupado;
+	}
 }

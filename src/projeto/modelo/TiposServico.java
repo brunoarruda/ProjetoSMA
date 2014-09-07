@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public enum TiposServico {
-		BUSCA_DISPONIBILIDADE_HOTEIS(Tarefa_NOVO.GUI), 
-		ORCAMENTO_HOTEL(Tarefa_NOVO.GUI), 
+		BUSCA_DISPONIBILIDADE_HOTEIS(Tarefa.GUI, Tarefa.TelaDeBusca), 
+		ORCAMENTO_HOTEL(Tarefa.GUI), 
 		RESERVA_HOTEL, 
 		PAGAMENTO_ONLINE,
-		SUGESTAO_INTELIGENTE_HOTEIS(Tarefa_NOVO.IA);
+		SUGESTAO_INTELIGENTE_HOTEIS(Tarefa.IA);
 		
-		private List<Tarefa_NOVO> tarefas;
+		private List<Tarefa> tarefas;
 		
-		TiposServico(Tarefa_NOVO... tarefas){
-			this.tarefas = new ArrayList<Tarefa_NOVO>();
-			for (Tarefa_NOVO tarefa: tarefas){
+		TiposServico(Tarefa... tarefas){
+			this.tarefas = new ArrayList<Tarefa>();
+			for (Tarefa tarefa: tarefas){
 				this.tarefas.add(tarefa);
 			}
 		}
 		
-		public List<Tarefa_NOVO> getTarefa(){
+		public List<Tarefa> getTarefa(){
 			return this.tarefas;
 		}
 }

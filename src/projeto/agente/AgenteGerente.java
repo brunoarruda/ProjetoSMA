@@ -11,7 +11,12 @@ public class AgenteGerente extends Agent {
 		// TODO Auto-generated method stub
 		super.setup();
 
-		addBehaviour(new RecebeSolicitacao(this));
+		Object[] args = getArguments();
+		String[] nomesProgramadores = new String[args.length];
+		for (int i = 0; i < args.length; i++) {
+			nomesProgramadores[i] = (String) args[i];
+		}
+		addBehaviour(new RecebeSolicitacao(this, nomesProgramadores));
 	}
-	
+
 }

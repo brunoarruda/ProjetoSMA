@@ -28,12 +28,12 @@ public class RecebePedido extends CyclicBehaviour {
 			myAgent.send(reply);
 			
 			
-			//Avisar o gerente sobre o serviço requisitado
+			//Avisar o gerente sobre o serviï¿½o requisitado
 			ACLMessage avisoParaGerente = new ACLMessage(ACLMessage.REQUEST);
 			avisoParaGerente.setSender(myAgent.getAID());
 			avisoParaGerente.addReceiver(new AID(agenteGerente, AID.ISLOCALNAME));
 			avisoParaGerente.setLanguage(language);
-			avisoParaGerente.setContent("InserirBackLog: " + mensagemCliente.getContent());
+			avisoParaGerente.setContent("InserirBackLog:" + mensagemCliente.getContent());
 			
 			myAgent.send(avisoParaGerente);
 		}
